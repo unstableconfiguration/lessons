@@ -1,0 +1,32 @@
+<!-- Comments: 
+    HTML comments use these opening and closing tags and anything typed 
+    between them will be ignored and is only there to be read by a person.
+-->
+
+<!-- The document head contains meta information, and references to external 
+    scripts and style sheets. For now, we are adding our script at the bottom 
+    of the page though.-->
+<head>
+    <!-- The page will work without this, but it will complain in the console. 
+        So we're adding this so we don't have to see the red text. -->
+    <meta charset="UTF-8">
+</head>
+<body>
+    
+    <!-- Adding a button. 
+        Input elements have several different 'type' options (look up some of
+        the others). Here is a button-type input element. It should contain 
+        the text 'starting value'. The 'id' is a name we give it to be able to 
+        look it up with javascript.
+    -->
+    <input id='test_button' type='button' value='starting value' />
+</body>
+
+<!-- Referencing scripts: 
+    For helloworld.html, we put our javascript inside the .html document. Best practice 
+    is to put scripts into their own separate files. The 'src' attribute can find and load 
+    the script by file path or URL.
+    If we have buttons.js in the same folder as buttons.html, then buttons.js should load when 
+    we open buttons.html in a browser.
+-->
+<script src='buttons_lesson.js'></script>
