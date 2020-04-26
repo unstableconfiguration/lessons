@@ -4,6 +4,9 @@ let yorim = {
     alignment : 'chaotic good',
     level : 8,
     class : 'rogue',
+    /* property : value 
+        You have a = sign here instead of a :
+    */
     stats = {
         str : 10,
         dex : 20,
@@ -12,6 +15,8 @@ let yorim = {
         wis : 14,
         cha : 10,
     },
+    // Same thing for these. 
+        // statMod : function(...
     statMod = function(stat) {
         let mod = Math.floor((stat - 10) / 2);
         return mod;
