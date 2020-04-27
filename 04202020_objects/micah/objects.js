@@ -7,7 +7,7 @@ let yorim = {
     /* property : value 
         You have a = sign here instead of a :
     */
-    stats = {
+    stats : {
         str : 10,
         dex : 20,
         con : 12,
@@ -17,20 +17,20 @@ let yorim = {
     },
     // Same thing for these. 
         // statMod : function(...
-    statMod = function(stat) {
+    statMod : function(stat) {
         let mod = Math.floor((stat - 10) / 2);
         return mod;
     },
-    hpCalc = function() {
-        let totalHP = 8 + (yorim.level - 1) * 5 + modBonus(con) * yorim.level;
+    hpCalc : function() {
+        let totalHP = 8 + (this.level - 1) * 5 + this.statMod(this.stats.con) * this.level;
         return totalHP;
     },
-    profBonus = function() {
-        let bonus = Math.floor(yorim.level / 4) + 1;
+    profBonus : function() {
+        let bonus = Math.floor(this.level / 4) + 1;
         return bonus;
     },
 }
 
-console.log(yorim.statMod(dex));
-console.log(yorim.hpCalc);
-console.log(yorim.profBonus);
+console.log(yorim.statMod(yorim.stats.dex));
+console.log(yorim.hpCalc());
+console.log(yorim.profBonus());
