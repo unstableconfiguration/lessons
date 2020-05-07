@@ -1,12 +1,15 @@
+let nameDisplay = document.getElementById('charname');
+let raceDisplay = document.getElementById('race');
+let alignDisplay = document.getElementById('alignment');
+let levelDisplay = document.getElementById('level');
+let classDisplay = document.getElementById('class');
+
 let yorim = {
     name : 'yorim',
     race : 'wood elf',
     alignment : 'chaotic good',
     level : 8,
     class : 'rogue',
-    /* property : value 
-        You have a = sign here instead of a :
-    */
     stats : {
         str : 10,
         dex : 20,
@@ -15,8 +18,7 @@ let yorim = {
         wis : 14,
         cha : 10,
     },
-    // Same thing for these. 
-        // statMod : function(...
+
     statMod : function(stat) {
         let mod = Math.floor((stat - 10) / 2);
         return mod;
@@ -31,6 +33,12 @@ let yorim = {
     },
 }
 
-console.log(yorim.statMod(yorim.stats.dex));
-console.log(yorim.hpCalc());
-console.log(yorim.profBonus());
+nameDisplay.innerHTML = yorim.name;
+raceDisplay.innerHTML = yorim.race;
+alignDisplay.innerHTML = yorim.alignment;
+levelDisplay.innerHTML = yorim.level;
+classDisplay.innerHTML = yorim.class;
+
+//console.log(yorim.statMod(yorim.stats.dex));
+//console.log(yorim.hpCalc());
+//console.log(yorim.profBonus());
