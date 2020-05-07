@@ -3,6 +3,12 @@ let raceDisplay = document.getElementById('race');
 let alignDisplay = document.getElementById('alignment');
 let levelDisplay = document.getElementById('level');
 let classDisplay = document.getElementById('class');
+let strDisplay = document.getElementById('str');
+let dexDisplay = document.getElementById('dex');
+let conDisplay = document.getElementById('con');
+let intDisplay = document.getElementById('int');
+let wisDisplay = document.getElementById('wis');
+let chaDisplay = document.getElementById('cha');
 
 let yorim = {
     name : 'yorim',
@@ -38,6 +44,13 @@ raceDisplay.innerHTML = yorim.race;
 alignDisplay.innerHTML = yorim.alignment;
 levelDisplay.innerHTML = yorim.level;
 classDisplay.innerHTML = yorim.class;
+strDisplay.innerHTML = yorim.stats.str;
+dexDisplay.innerHTML = yorim.stats.dex;
+conDisplay.innerHTML = yorim.stats.con;
+intDisplay.innerHTML = yorim.stats.int;
+wisDisplay.innerHTML = yorim.stats.wis;
+chaDisplay.innerHTML = yorim.stats.cha;
+
 
 //console.log(yorim.statMod(yorim.stats.dex));
 //console.log(yorim.hpCalc());
