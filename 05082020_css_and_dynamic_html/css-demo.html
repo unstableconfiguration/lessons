@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href="css-demo.css" />
+</head>
+<body>
+
+    <!-- Applying a class
+        We just put class="x" to apply it. More than one class can be applied to an element simply 
+        by separating the class names with spaces. 
+
+        To apply a css class with javascript we set the 'className' property of the element like: 
+        let head = document.getElementById('header1');
+        head.className = 'header'; 
+    -->
+    <div>
+        <span id='header1' class='header'>Using a class</span>
+    </div>
+
+    <div>
+        <h1>Overriding defaults.</h1>
+    </div>
+
+    <!--  
+        By default, child elements inherit styles from their parents. 
+        In the case of conflicting style rules, the more recent or more local 
+        rules are honored. 
+    -->
+    <div class='inherited'>
+        <span>Rules inherited from parent element</span>
+    </div>
+
+    <div>
+        <span id='by-identifier'>Using ID</span>
+    </div>
+
+    <!-- Making compromises. 
+        Whenever possible, I prefer visually spacing elements out using line breaks. 
+        So for the code below, I would prefer it be 
+        <parent>
+            <child></child>
+            <child></child>
+        </parent>
+        Where we have a clean visual separation. The problem is, it recognizes the line break 
+        as a text element and ends up putting a space between elements that I otherwise want 
+        to be flush against one another.  
+
+        With HTML and CSS, it is really hard to maintain purity, and you're going to end up 
+        making a lot of compromises. It gets better with experience, and there are ever-better 
+        tools to make it easier to work with, but you're still going to have to do the odd 
+        ugly hack to get things how you want them. 
+    -->
+    <div class='block-container'>
+        <div class='left-block'>Left</div><div class='right-block'>
+            Right</div>
+    </div>
+
+
+</body>
