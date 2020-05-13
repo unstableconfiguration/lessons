@@ -11,11 +11,11 @@ let wisDisplay = document.getElementById('wis');
 let chaDisplay = document.getElementById('cha');
 
 let yorim = {
-    name : 'yorim',
-    race : 'wood elf',
-    alignment : 'chaotic good',
+    name : 'Yorim',
+    race : 'Wood Elf',
+    alignment : 'Chaotic Good',
     level : 8,
-    class : 'rogue',
+    class : 'Rogue',
     stats : {
         str : 10,
         dex : 20,
