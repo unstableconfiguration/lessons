@@ -1,0 +1,101 @@
+/* CSS Comments are block only, so no single-line // comments. */
+
+/* Classes: 
+    A css class is a named and re-usable style rule, and is the most common 
+    way of applying css styles. 
+
+    If, for example, we want consistently styled headers across our site, we might 
+    make a header class rather than use the <h1>, <h2>, <h3> tags. 
+*/
+.header { 
+    font-weight:bold;
+    font-size: 24px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Applying a style to all elements of a given type
+    We can globally affect elements of a given type. Here, any <h1> tag will 
+    obey these rules rather than the default h1 rules. 
+    
+    In general using a class is preferred to make things explicit, but it isnt 
+    uncommon to make things like anchor (hyperlink) tags look consistent using css.
+*/
+h1 { 
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: maroon;
+}
+
+.inherited {
+    color:coral;
+}
+
+/* The # sign applies the rule to elements of the given id. 
+    id-specific stylings are less common than class based ones, but they are a useful tool 
+    to be aware of.
+*/
+#by-identifier {
+    text-decoration: underline;
+    color: rgb(218, 165, 32);
+}
+
+
+/* Everything is relative.  
+    Every element has a parent up until the <body> element, though that 
+    technically has a parent of <html></html>. 
+    Every element is going to be positioned and sized relative to its parent. 
+
+    .block-container is 60% of the <body> element, which is typically 100% of the 
+    window. If you resize the window, it should adjust automatically. .left-block 
+    and .right-block are 30/70% of the block container. 
+
+    It can go both ways in some areas. Height is typically based on the content of 
+    an element. For example, if you enter text into a <p></p> element, it automatically 
+    will increase in height. By setting the height on my inner divs, it automatically 
+    resized the parent. 
+*/
+
+/*  Everything is a box.
+
+*/
+.block-container { 
+    margin:0px;
+    padding:0px;
+    width:60%;
+}
+
+.left-block {
+    background-color: antiquewhite;
+    border: solid thin rosybrown;
+    display:inline-block;
+    height:60px;
+    margin-right:-2px;
+    width: 30%;
+}
+
+/* More compromises. 
+    I want these divs to be flush against one another. I also want them to occupy 100% 
+    of their parent element's width. I also want them to have 1px borders (thin = 1px).  
+
+    These 3 things together created a problem. Borders occupy space outside of an element. 
+    So my total width was 30% + 70% + 4px (the 1px borders on the left and right of the 
+    two divs). This forced the divs to wrap rather than stay side by side.
+
+    My first way of addressing this was to set widths to 30%/69% and to let the missing 1% 
+    absorb the borders. This was a fast and hacky solution, but it has the potential to fail 
+    unexpectedly. 1% width is not a finite amount. If I resize the parent .block-container either 
+    by adjusting its width or resizing the page, the value of that 1% changes. Likewise, if I 
+    adjust the border width of the children, eventually I'm going to start wrapping again.
+
+    I ended up adjusting the margins by the thickness of my borders. Margins a way of 
+    setting space outside of an element. By setting it to negative, I allow my elements to 
+    overlap only on the place where they intersect.
+*/
+.right-block {
+    background-color: skyblue;
+    border: solid 1px #708090;
+    display:inline-block;
+    height:60px;
+    margin-left:-2px;
+    width:70%;
+}
