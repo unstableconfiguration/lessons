@@ -1,0 +1,71 @@
+<html lang="us">
+    <head>
+        <meta charset="utf-8">
+        <link rel='stylesheet' href='character-sheet.css'/>
+    </head>
+    <body>
+        <!-- D&D 5e character sheet, 
+            I want the most-frequently accessed information to be at the top and as condensed as 
+            possible without feeling too busy.  
+
+            We want to be able to shrink the window down to about 50-60% screen width and have the 
+            layout maintain its integrity. 
+        -->
+
+        <div id='character-sheet'>
+            <div id='main-header' class='container'>
+                Name, race, class, level, background, alignment, 
+            </div>
+            <div class='three-col-container'>
+                <div id='col-1'>
+                    stats
+                    str     int
+                    dex     wis
+                    con     cha
+                    
+                    prof    init
+                    speed   passive
+            
+                    hpmax   hpcurrent
+                    ac      death saves
+    
+                    saves
+                    str     int
+                    dex     wis 
+                    con     cha 
+    
+                    Skills -- may be better as col 2 lead 
+                </div> 
+                <div id='col-2'>
+                    Attacks, 
+                    traits/features,
+                </div> 
+                <div id='col-3'>
+                    Mundane gear and coins 
+                    Magic items 
+                </div>
+
+            </div>
+            <div id='spell-list' class='container'>
+                list of spells, will be hidden if not appliccable
+                needs to handle 10 levels cantrip-9th. So maybe 2 rows of 5 cols
+                Could just use a  borderless table for that. 
+            </div>
+            <div id='description' class='container'>
+                physical description
+            </div>
+            <div id='background' class='container'>
+                <div id='character-traits' class='traits'>
+                    trait
+                    ideal  
+                    bond 
+                    flaw 
+                </div>
+                <div id='notes' class='notes'>
+                    notes and scratch pad. May hold backstory too.
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

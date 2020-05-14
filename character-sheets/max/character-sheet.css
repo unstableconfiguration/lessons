@@ -1,0 +1,58 @@
+
+#character-sheet {
+    padding:4px;
+    margin:.3%;
+}
+
+/* Bit of a generic name, could be better. */
+.container {
+    border: solid thin black;
+    padding: inherit;
+    margin: inherit;
+    min-width:600px;
+    width:90%;
+}
+
+.three-col-container { 
+    display: flex;
+    justify-content: space-between;
+    margin: inherit;
+    min-width:600px;
+    padding: inherit;
+    width:90%;
+}
+
+.three-col-container > div { 
+    border:solid thin black;
+    display: inline-block;
+    margin:inherit;
+    padding:inherit;
+    vertical-align: top;
+    width: 33%; 
+}
+
+#background {
+    border:none;
+    display:flex;
+    justify-content: space-between;
+    margin:inherit;
+    min-width:600px;
+    padding: inherit;
+    width: 90%;
+}
+
+.traits { 
+    border:solid thin black;
+    display:inline-block;
+    margin:inherit;
+    padding:inherit;
+    width:30%;
+}
+
+.notes {
+    border: solid thin black;
+    display:inline-block;
+    margin:inherit;
+    padding:inherit;
+    width:70%;
+}
