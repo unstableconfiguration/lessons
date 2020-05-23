@@ -1,0 +1,62 @@
+statcontainer {
+    margin: 0 auto;
+    padding: 0px;
+    width: 50%;
+}
+
+statbox {
+    float: left;
+    background-color: gray;
+    border: solid 2px green;
+    display: inline-block;
+    height: 100px;
+    margin-right: 2;
+    width: 8%;
+}
+
+statmodbox {
+    
+    background-color: aliceblue;
+    border: solid 2px black;
+    display: inline-block;
+    height: 100px;
+    margin-left: 2;
+    width: 5%;
+}
+
+saves{
+    clear: both;
+}
+
+.headerlabel {
+    font-family: fantasy;
+    color: forestgreen;
+    font-size: 14px;
+    font-weight: bolder;
+    text-decoration: underline overline;
+}
+
+.values{
+    font-family: Impact;
+    color: black;
+    font-size: 14px;
+}
+
+charmeta {
+    color: teal;
+    font-family: fantasy;
+    font-size: 12px;
+}
+
+
+
+statblock {
+    font-family: fantasy;
+    font-size: 12px;
+}
+
+saves {
+    font-family: fantasy;
+    font-size: 10px;
+}
+
