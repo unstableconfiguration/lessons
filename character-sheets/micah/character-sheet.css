@@ -1,7 +1,25 @@
-statcontainer {
+body,
+html {
+    -webkit-text-stroke: 1px white;
+    height: 100%;
+    font-weight: 900;
+}
+
+.bg {
+    background-image: url("border.jpg");
+    height: 100%;
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+statblock {
+    font-family: fantasy;
+    font-size: 14px;
     margin: 0 auto;
     padding: 0px;
-    width: 50%;
+    width: 80%;
 }
 
 statbox {
@@ -9,19 +27,20 @@ statbox {
     background-color: gray;
     border: solid 2px green;
     display: inline-block;
-    height: 100px;
+    height: 140px;
     margin-right: 2;
-    width: 8%;
+    width: 35%;
+    opacity: 0.75;
 }
 
 statmodbox {
-    
     background-color: aliceblue;
     border: solid 2px black;
     display: inline-block;
-    height: 100px;
+    height: 140px;
     margin-left: 2;
-    width: 5%;
+    width: 25%;
+    opacity: 0.75;
 }
 
 saves{
@@ -30,33 +49,37 @@ saves{
 
 .headerlabel {
     font-family: fantasy;
-    color: forestgreen;
-    font-size: 14px;
-    font-weight: bolder;
+    color: rgb(5, 63, 5);
+    font-size: 18px;
+    font-weight: 900;
     text-decoration: underline overline;
+}
+
+.numericvalues{
+    font-family: Monofett, Impact;
+    color: black;
+    font-size: 20px;
 }
 
 .values{
     font-family: Impact;
     color: black;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 charmeta {
-    color: teal;
+    color: rgb(9, 71, 71);
     font-family: fantasy;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 
 
 statblock {
-    font-family: fantasy;
-    font-size: 12px;
+
 }
 
 saves {
-    font-family: fantasy;
-    font-size: 10px;
+
 }
 
