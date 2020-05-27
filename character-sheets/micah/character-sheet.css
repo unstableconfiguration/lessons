@@ -14,37 +14,60 @@ html {
     background-size: cover;
   }
 
-statblock {
+statsave {
+    width: 50%;
+    float: left;
+}
+
+
+statcontainer {
     font-family: fantasy;
     font-size: 14px;
-    margin: 0 auto;
-    padding: 0px;
-    width: 80%;
+    margin: auto;
+    padding: 1px;
+    width: 50%;
 }
 
 statbox {
     float: left;
     background-color: gray;
     border: solid 2px green;
-    display: inline-block;
+    display: grid;
     height: 140px;
     margin-right: 2;
-    width: 35%;
+    width: 66%;
     opacity: 0.75;
 }
 
 statmodbox {
+    float: none;
     background-color: aliceblue;
     border: solid 2px black;
     display: inline-block;
     height: 140px;
-    margin-left: 2;
-    width: 25%;
+    width: 29%;
     opacity: 0.75;
 }
 
-saves{
-    clear: both;
+proficiencies {
+    padding-left: 2px;
+    float: left;
+    background-color: lightseagreen;
+    border: solid 2px black;
+    display: grid;
+    height: 365px;
+    width: 32%;
+    opacity: 0.75;
+    clear: inline-end;
+}
+
+saves {
+    /* clear: both; */
+    border: solid 2px yellow;
+    display: inline-block;
+    height: 200px;
+    width: 100%;
+    background-color: darkorchid;
 }
 
 .headerlabel {
@@ -73,13 +96,4 @@ charmeta {
     font-size: 16px;
 }
 
-
-
-statblock {
-
-}
-
-saves {
-
-}
 
