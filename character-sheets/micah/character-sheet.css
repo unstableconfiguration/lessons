@@ -14,9 +14,30 @@ html {
     background-size: cover;
   }
 
-statsave {
-    width: 50%;
+charmeta {
+    color: rgb(9, 71, 71);
+    font-family: fantasy;
+    font-size: 16px;
+    margin: auto;
+    height: 105px;
+}
+
+charmetaleft {
+    width: 49%;
     float: left;
+    height: 100px;
+}
+
+charmetaright {
+    width: 49%;
+    float: right;
+    height: 100px;
+}
+
+
+statsave {
+    float: left;
+    width: 50%;
 }
 
 
@@ -25,49 +46,35 @@ statcontainer {
     font-size: 14px;
     margin: auto;
     padding: 1px;
-    width: 50%;
+    width: 70%;
 }
 
 statbox {
-    float: left;
-    background-color: gray;
-    border: solid 2px green;
-    display: grid;
     height: 140px;
     margin-right: 2;
-    width: 66%;
-    opacity: 0.75;
+    width: 70%;
+    float: left;
+
 }
 
 statmodbox {
-    float: none;
-    background-color: aliceblue;
-    border: solid 2px black;
-    display: inline-block;
+    float: left;
     height: 140px;
-    width: 29%;
-    opacity: 0.75;
+    width: 28%;
 }
 
 proficiencies {
     padding-left: 2px;
-    float: left;
-    background-color: lightseagreen;
-    border: solid 2px black;
-    display: grid;
+    float: right;
     height: 365px;
-    width: 32%;
-    opacity: 0.75;
+    width: 45%;
     clear: inline-end;
 }
 
 saves {
-    /* clear: both; */
-    border: solid 2px yellow;
     display: inline-block;
     height: 200px;
-    width: 100%;
-    background-color: darkorchid;
+    width: 98%;
 }
 
 .headerlabel {
@@ -90,10 +97,5 @@ saves {
     font-size: 16px;
 }
 
-charmeta {
-    color: rgb(9, 71, 71);
-    font-family: fantasy;
-    font-size: 16px;
-}
 
 
