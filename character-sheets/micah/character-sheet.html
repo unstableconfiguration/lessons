@@ -11,7 +11,6 @@
   
   <body>
     <div class="bg">
-    <charmeta>
       <charmetaleft>
         <label for="charname">Character Name: </label>
         <span id="charname" class="values"></span><br>
@@ -24,14 +23,24 @@
         <label for="class">Class:</label>
         <span id="class" class="values"></span>
       </charmetaleft>
+      <charmetamid>
+        <label for="profbonus">Proficiency Bonus: </label>
+        <span id="profbonus" class="values"></span><br>
+        <label for="movespeed">Movement Speed: </label>
+        <span id="movespeed" class="values"></span><br>
+        <label for="initiative">Initiative: </label>
+        <span id="initiative" class="values"></span><br>
+        <label for="armorclass">Armor Class: </label>
+        <span id="armorclass" class="values"></span><br><br>
+      </charmetamid>
       <charmetaright>
-        <label for="hitpoints">Hit Points (Min/Max): </label>
+        <label for="hitpoints">Max Hit Points: </label><br>
         <span id="hitpoints" class="values"></span>
       </charmetaright>
     </charmeta>
     <statsave>
       <statcontainer>
-        <br><br><span id="stats" class="headerlabel">Ability Scores</span><br>
+        <span id="stats" class="headerlabel">Ability Scores</span><br>
         <statbox>
           <label for="str">Strength:</span>
           <span id="str" class="numericvalues"></span><br>
@@ -80,53 +89,78 @@
       <span id="chasave" class="numericvalues"></span><br>
     </saves>
   </statsave>
-    
-    <proficiencies>
+    <profblock>
       <span id="proficiency" class="headerlabel">Proficiencies</span><br>
-      <label for="acrobatics">Acrobatics: </label>
-      <span id="acrobatics" class="numericvalues"></span><br>
-      <label for="animalhandling">Animal Handling: </label>
-      <span id="animalhandling" class="numericvalues"></span><br>
-      <label for="arcana">Arcana: </label>
-      <span id="arcana" class="numericvalues"></span><br>
-      <label for="athletics">Athletics: </label>
-      <span id="athletics" class="numericvalues"></span><br>
-      <label for="deception">Deception: </label>
-      <span id="deception" class="numericvalues"></span><br>
-      <label for="history">History: </label>
-      <span id="history" class="numericvalues"></span><br>
-      <label for="insight">Insight: </label>
-      <span id="insight" class="numericvalues"></span><br>
-      <label for="intimidation">Intimidation: </label>
-      <span id="intimidation" class="numericvalues"></span><br>
-      <label for="investigation">Investigation: </label>
-      <span id="investigation" class="numericvalues"></span><br>
-      <label for="medicine">Medicine: </label>
-      <span id="medicine" class="numericvalues"></span><br>
-      <label for="nature">Nature: </label>
-      <span id="nature" class="numericvalues"></span><br>
-      <label for="perception">Perception: </label>
-      <span id="perception" class="numericvalues"></span><br>
-      <label for="performance">Performance: </label>
-      <span id="performance" class="numericvalues"></span><br>
-      <label for="persuasion">Persuasion: </label>
-      <span id="persuasion" class="numericvalues"></span><br>
-      <label for="religion">Religion: </label>
-      <span id="religion" class="numericvalues"></span><br>
-      <label for="sleightofhand">Sleight of Hand: </label>
-      <span id="sleightofhand" class="numericvalues"></span><br>
-      <label for="stealth">Stealth: </label>
-      <span id="stealth" class="numericvalues"></span><br>
-      <label for="survival">Survival: </label>
-      <span id="survival" class="numericvalues"></span><br>
+      <proficiencies>
+        <label for="acrobatics">Acrobatics: </label>
+        <span id="acrobatics" class="numericvalues"></span><br>
+        <label for="animalhandling">Animal Handling: </label>
+        <span id="animalhandling" class="numericvalues"></span><br>
+        <label for="arcana">Arcana: </label>
+        <span id="arcana" class="numericvalues"></span><br>
+        <label for="athletics">Athletics: </label>
+        <span id="athletics" class="numericvalues"></span><br>
+        <label for="deception">Deception: </label>
+        <span id="deception" class="numericvalues"></span><br>
+        <label for="history">History: </label>
+        <span id="history" class="numericvalues"></span><br>
+        <label for="insight">Insight: </label>
+        <span id="insight" class="numericvalues"></span><br>
+        <label for="intimidation">Intimidation: </label>
+        <span id="intimidation" class="numericvalues"></span><br>
+        <label for="investigation">Investigation: </label>
+        <span id="investigation" class="numericvalues"></span><br>
+        <label for="medicine">Medicine: </label>
+        <span id="medicine" class="numericvalues"></span><br>
+        <label for="nature">Nature: </label>
+        <span id="nature" class="numericvalues"></span><br>
+        <label for="perception">Perception: </label>
+        <span id="perception" class="numericvalues"></span><br>
+        <label for="performance">Performance: </label>
+        <span id="performance" class="numericvalues"></span><br>
+        <label for="persuasion">Persuasion: </label>
+        <span id="persuasion" class="numericvalues"></span><br>
+        <label for="religion">Religion: </label>
+        <span id="religion" class="numericvalues"></span><br>
+        <label for="sleightofhand">Sleight of Hand: </label>
+        <span id="sleightofhand" class="numericvalues"></span><br>
+        <label for="stealth">Stealth: </label>
+        <span id="stealth" class="numericvalues"></span><br>
+        <label for="survival">Survival: </label>
+        <span id="survival" class="numericvalues"></span><br>
 
 
-  </proficiencies>
+    </proficiencies>
+    <proficiencyscore>
+      <span id="acroprofmod" class="numericvalues"></span><br>
+      <span id="animprofmod" class="numericvalues"></span><br>
+      <span id="arcaprofmod" class="numericvalues"></span><br>
+      <span id="athlprofmod" class="numericvalues"></span><br>
+      <span id="deceprofmod" class="numericvalues"></span><br>
+      <span id="histprofmod" class="numericvalues"></span><br>
+      <span id="insiprofmod" class="numericvalues"></span><br>
+      <span id="intiprofmod" class="numericvalues"></span><br>
+      <span id="inveprofmod" class="numericvalues"></span><br>
+      <span id="mediprofmod" class="numericvalues"></span><br>
+      <span id="natuprofmod" class="numericvalues"></span><br>
+      <span id="percprofmod" class="numericvalues"></span><br>
+      <span id="perfprofmod" class="numericvalues"></span><br>
+      <span id="persprofmod" class="numericvalues"></span><br>
+      <span id="reliprofmod" class="numericvalues"></span><br>
+      <span id="sleiprofmod" class="numericvalues"></span><br>
+      <span id="steaprofmod" class="numericvalues"></span><br>
+      <span id="survprofmod" class="numericvalues"></span><br>
+    </proficiencyscore>
+</profblock>
 
     
     <spells>
 
     </spells>
+
+    <inventory>
+
+    </inventory>
 
   </div>
   </body>

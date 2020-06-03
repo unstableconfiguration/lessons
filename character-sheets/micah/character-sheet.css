@@ -8,7 +8,7 @@ html {
 .bg {
     background-image: url("border.jpg");
     height: 100%;
-    background-color: #cccccc;
+    /*background-color: #cccccc;*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,19 +19,25 @@ charmeta {
     font-family: fantasy;
     font-size: 16px;
     margin: auto;
-    height: 105px;
+    height: 120px;
 }
 
 charmetaleft {
-    width: 49%;
+    width: 42%;
     float: left;
-    height: 100px;
+    height: 120px;
+}
+
+charmetamid {
+    width: 29%;
+    float: left;
+    height: 120px;
 }
 
 charmetaright {
-    width: 49%;
-    float: right;
-    height: 100px;
+    width: 27%;
+    float: left;
+    height: 120px;
 }
 
 
@@ -55,7 +61,6 @@ statbox {
     width: auto;
     max-width: 65%;
     float: left;
-
 }
 
 statmodbox {
@@ -64,12 +69,27 @@ statmodbox {
     width: 28%;
 }
 
-proficiencies {
+profblock {
     padding-left: 2px;
+    padding-right: 20px;
+    float: left;
+    height: 365px;
+    max-width: 55%;
+    
+}
+
+proficiencies {
+    /*padding-left: 2px;
     padding-right: 20px;
     float: right;
     height: 365px;
     max-width: 55%;
+    clear: inline-end;*/
+    float: left;
+}
+
+proficiencyscore {
+    float: left;
     clear: inline-end;
 }
 
@@ -99,5 +119,9 @@ saves {
     font-size: 16px;
 }
 
-
+#hitpoints{
+    font-family: Impact;
+    color: black;
+    font-size: 24px;
+}
 
