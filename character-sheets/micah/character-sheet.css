@@ -17,7 +17,7 @@ html {
 charmeta {
     color: rgb(9, 71, 71);
     font-family: fantasy;
-    font-size: 16px;
+    font-size: 18px;
     margin: auto;
     height: 120px;
 }
@@ -102,15 +102,15 @@ saves {
 .headerlabel {
     font-family: fantasy;
     color: rgb(5, 63, 5);
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 900;
-    text-decoration: underline overline;
+    text-decoration: underline overline lawngreen;
 }
 
 .numericvalues{
     font-family: Monofett, Impact;
     color: black;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .values{
@@ -122,6 +122,6 @@ saves {
 #hitpoints{
     font-family: Impact;
     color: black;
-    font-size: 24px;
+    font-size: 26px;
 }
 
