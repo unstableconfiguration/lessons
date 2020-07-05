@@ -1,106 +1,124 @@
 body,
 html {
     -webkit-text-stroke: 1px white;
-    height: 100%;
     font-weight: 900;
+    box-sizing: border-box;
+    color: rgb(9, 71, 71);
+    font-family: fantasy;
+    font-size: 18px;
+    height: 100%;
 }
+
 
 .bg {
     background-image: url("border.jpg");
     height: 100%;
-    /*background-color: #cccccc;*/
+    background-color: darkgray;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-charmeta {
-    color: rgb(9, 71, 71);
-    font-family: fantasy;
-    font-size: 18px;
-    margin: auto;
-    height: 120px;
+/* Top line */
+.charmeta {
+    display: inline-flex;
+    align-content: space-around;
+    width: 100%;
+    margin-left: 20px;
 }
 
-charmetaleft {
-    width: 42%;
+.charmetaleft {
+    padding: 1em;
+    flex-shrink: 1;
+    flex-grow: 2;
+}
+
+.charmetamid {
+    padding: 1em;
+    flex-shrink: 1;
+    flex-grow: 2;
+}
+
+.charmetaright {
+    padding: 1em;
+    flex-shrink: 2;
+    flex-grow: 1;
+}
+
+
+.statsaveprof /* Second line - statcontainer, savebox, profblock */ {
+    display: inline-flex;
+    width: 100%;
+    padding: 1em;
+    margin: 0 20px;
+}
+
+
+.statcontainer /* stattitle, statbox, and statmodbox */ {
+    font-size: 14px;    
+    width: 50%;
+    display: inline-flexbox;
+}
+
+.stattitle {
+    width: 100%;   
+}
+
+.statbox {
+    width: 50%;
     float: left;
-    height: 120px;
 }
 
-charmetamid {
-    width: 29%;
-    float: left;
-    height: 120px;
-}
-
-charmetaright {
-    width: 27%;
-    float: left;
-    height: 120px;
-}
-
-
-statsave {
+.statmodbox {
     float: left;
     width: 50%;
 }
 
-
-statcontainer {
-    font-family: fantasy;
-    font-size: 14px;
-    margin: auto;
-    padding: 1px;
-    width: 70%;
+.savebox /* savetitle, saves, and savemods */ {
+    display: inline-flexbox;
+    width: 25%;
+    margin: 0 1em 0 1em;
 }
 
-statbox {
-    height: 140px;
-    margin-right: 10px;
-    width: auto;
-    max-width: 65%;
-    float: left;
+.savetitle {
+    width: 100%;
 }
 
-statmodbox {
+.saves {
     float: left;
-    height: 140px;
-    width: 28%;
+    height: 200px;
+    width: 60%;
 }
 
-profblock {
-    padding-left: 2px;
-    padding-right: 20px;
+.savemods {
     float: left;
-    height: 365px;
-    max-width: 55%;
+    height: 200px;
+    width: 40%;
+}
+
+.profblock /* proftitle, proficiencies, and proficiencyscore */ {
+    float: left;
+    width: 25%;
+    display: inline-flexbox;
     
 }
 
-proficiencies {
-    /*padding-left: 2px;
-    padding-right: 20px;
-    float: right;
-    height: 365px;
-    max-width: 55%;
-    clear: inline-end;*/
+.proftitle {
+    width: 100%;
+}
+
+.proficiencies {
+    float: left;
+    width: 60%
+}
+
+.proficiencyscore {
+    width: 40%;
     float: left;
 }
 
-proficiencyscore {
-    float: left;
-    clear: inline-end;
-}
-
-saves {
-    display: inline-block;
-    height: 200px;
-    width: 98%;
-}
 
 .headerlabel {
-    font-family: fantasy;
     color: rgb(5, 63, 5);
     font-size: 20px;
     font-weight: 900;
